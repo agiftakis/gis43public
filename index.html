@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FOREX RUMOR TRADING</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 ">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+  <style>
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;}
+
+
+#main{font-size:14px;top-margin:2px;}
+
+.wrapper{ margin:0 auto; width:auto;  }
+
+li {display:inline-block;}
+
+li  p{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;font-family: Arial narrow, sans-serif;
+}
+
+li  a:hover { color:white; text-decoration: none;
+    background-color: red;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#f6f8f9;  
+    width: auto; 
+    height:auto;
+	z-index:5;
+	overflow:hidden; }
+
+.inputs:hover .dropdown-content {
+    display: block ; 
+}
+
+.monthly:hover .dropdown-content{
+    display: block; 
+}
+
+  .dropdown-content a {
+    color: white;
+    padding: 2px 2px;
+    text-decoration: none;
+    text-align:left;
+}
+
+.dropdown-content a:hover {background-color:#828788; font-weight:bold;}
+            
+	div .dropdown-content ul li{ display:block;}		  
+		
+		.navbar-header{text-align:center; 
+				   font-size:22px; }
+          
+                  
+				   
+             h1{font-size:50px; color:floralwhite; 
+                 font-family:Blippo, fantasy; font-stretch:extra-expanded;font-style:oblique;
+				 font-weight:600;display:inline-block;}
+				 
+		
+		 #vid { 
+      position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        width:100%; }
+		
+		body{  background-color:black;
+		background: url(fxicon.jpg);
+       background-repeat:repeat-y;
+       background-size:auto;}
+              
+                           
+ #first{color:floralwhite; 
+   font-family:Noto Sans, sans-serif;} 
+ 
+ #first{ 
+  opacity:0.07;
+  filter: alpha(opacity=50);
+  }
+  
+  #first:hover{transition:1.5s;
+    opacity: 1.0;
+    filter: alpha(opacity=100); font-size:25px;}
+  
+
+ 
+  </style>
+  
+ 
+</head>
+
+<body onload="fxFun()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+
+<div  class="navbar-header">
+
+<video id="vid" loop> <source src="quotes.mp4" ></video>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.forexfactory.com/calendar.php">FX RUMOR
+	  <div id="first">
+	  <p> ALWAYS FREE DAILY TRADE DIRECTION </p>
+     <p style=" font-family:Arial narrow,sans-serif;">Compiled From Over 100 Leading Analysts</p>
+    </div></a>
+	
+</div>
+ <div class="wrapper"> 
+  <div class="collapse navbar-collapse" id="myNavbar">
+  
+<ul id="main" class="nav navbar-nav">
+ 
+<li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> 
+ <!-- <li class="monthly">
+  <p>MONTHLY SPREADSHEETS</p>
+   <div class="dropdown-content">
+   <ul>  
+      <li><a href="#">EA Spreadsheets</a></li>
+      <li><a href="#">Analyst Accuracy Spreadsheets </a></li>
+	  </ul>
+   </div>
+  </li>
+  
+  <li class="services"><p>TOP PERFORMING EA</p>
+  <div class="dropdown-content">
+      <ul>  
+      <li><a href="#">back test vids</a></li>
+      <li><a href="#">basic rules and strategy outline</a></li>
+	  <li><a href="#">basic unoptimized user inputs</a></li>
+	  <li><a href="#">computer repair</a></li>
+	  <li><a href="#">security</a></li>
+	  </ul>
+    </div>
+	</li>
+	
+   <li><p>HOW WE TEST OUR EA's</p></li>
+   
+	 
+  <li class="inputs">
+    <p>RETAIL TRADER DAILY DIRECTION</p>
+    <div class="dropdown-content">
+      <ul>  
+      <li><a href="#">eur/usd</a></li>
+      <li><a href="#">aud/usd</a></li>
+	  <li><a href="#">nzd/usd</a></li>
+	  <li><a href="#">gbp/usd</a></li>
+	  <li><a href="#">jpy/usd</a></li>
+	  <li><a href="#">chf/usd</a></li>
+	  <li><a href="#">usd/cad</a></li>
+	  <li><a href="#">financial/accounting</a></li>
+	  <li><a href="#">customer service rep</a></li>
+	  <li><a href="#">security</a></li>
+	  </ul>
+    </div>
+  </li>
+
+</ul> -->
+
+ 
+	
+   </div><!--end of id myNavbar-->
+  
+ </div><!--end of class wrapper-->
+
+</div><!-- end of main container-fluid--> 
+</nav>
+
+
+<script>
+function fxFun() {
+var myVid = document.getElementById("vid"); 
+    myVid.play(); 
+} 
+
+</script>
+
+
+  
+</body>
+</html>
+
