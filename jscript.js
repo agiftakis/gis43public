@@ -7,5 +7,8 @@ var myObject = {
     }
 }
 x = myObject.fullName();
-document.getElementById("demo").innerHTML = x; 
+y = myObject.lastName();
+document.getElementById("demo1").innerHTML = x;
+document.getElementById("demo2").innerHTML = y;
+alert( x + y);
 </script>
